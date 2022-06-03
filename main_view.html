@@ -7,11 +7,16 @@
     </head>
     <body>
         <h2>Hello Meems</h2>
-        <button onclick='Save()'>Click to call RecordSorcery</button>
+        <button onclick='Save()'>Quick Record</button>
+        <hr />
+        <button onclick='Restart()'>Restart RecordSorcery</button>
 
         <script>
             async function Save() {
                 call_plugin_method("RecordSorcerySave",{})
+            }
+            async function Restart() {
+                call_plugin_method("RecordSorceryRestart",{})
             }
         </script>
     </body>

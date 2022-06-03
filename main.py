@@ -4,6 +4,9 @@ class Plugin:
         import os
         os.system("replay-sorcery save")
 
+    async def RecordSorceryRestart(self, *args):
+        import os
+        os.system("systemctl --user restart replay-sorcery")
 
     # Asyncio-compatible long-running code, executed in a task when the plugin is loaded
     async def _main(self):
