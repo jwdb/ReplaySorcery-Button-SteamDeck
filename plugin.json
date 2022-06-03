@@ -1,6 +1,6 @@
 {
-    "name": "Plugin name",
-    "author": "Plugin author",
+    "name": "Record-Sorcery Save",
+    "author": "Jan-Willem de Bruyn",
     "main_view_html": "main_view.html",
     "tile_view_html": "",
     "flags": ["_hot_reload", "_root"]
