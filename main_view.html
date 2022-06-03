@@ -7,6 +7,12 @@
     </head>
     <body>
         <h2>Hello Meems</h2>
-        <button onclick='call_plugin_function("RecordSorcerySave")'>Click to call RecordSorcery</button>
+        <button onclick='Save()'>Click to call RecordSorcery</button>
+
+        <script>
+            async function Save() {
+                call_plugin_method("RecordSorcerySave",{})
+            }
+        </script>
     </body>
 </html>
