@@ -6,7 +6,7 @@ class Plugin:
 
     async def RecordSorceryRestart(self, *args):
         import os
-        os.system("systemctl --user restart replay-sorcery")
+        os.system("nohup /home/deck/replay-sorcery-binary &")
 
     # Asyncio-compatible long-running code, executed in a task when the plugin is loaded
     async def _main(self):
